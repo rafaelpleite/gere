@@ -796,8 +796,7 @@ nav ul li {
     }
 
     .video-wrapper {
-        width: 90px; /* Maintain fixed size */
-        height: 160px;
+        width: 70vw; /* Maintain fixed size */
     }
 
     .depoimentos-videos img {
