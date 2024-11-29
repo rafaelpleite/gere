@@ -365,20 +365,39 @@ nav ul li {
 
 /* Register Container */
 .register-container {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     color: white;
-
-    width: min(46.3125rem, 70vh);
-
+    
+    /* Responsive Width */
+    width: 90vw; /* 90% of the viewport width */
+    max-width: 46.3125rem; /* Approximately 740px */
+    
+    /* Responsive Height */
+    max-height: 90vh; /* 90% of the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+    
     border-radius: 1.25rem;
     border: 1.5px solid #5C10FF;
     background: #2A2A2A;
     z-index: 100;
+
+    /* Optional: Add padding to prevent content from touching edges */
+    padding: 1rem;
+    
+    /* Smooth Scrolling */
+    scroll-behavior: smooth;
 }
+
+/* Hide scrollbar but allow scrolling (optional) */
+.register-container::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+
 
 
 .register-header {
@@ -427,6 +446,33 @@ nav ul li {
     }
 }
 
+.register-form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem; /* Consistent spacing */
+    border: none;
+    border-radius: 4px;
+    background: #222;
+    color: white;
+    font-size: 1rem;
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><path fill="%23ffffff" d="M0 0l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 10px 5px;
+}
+
+/* Adjust the arrow for better visibility */
+.register-form select:hover,
+.register-form select:focus {
+    background-color: #333;
+    outline: none;
+}
+
+/* Optional: Add a transition for smooth hover effect */
+.register-form select {
+    transition: background-color 0.3s ease;
+}
 
 .register-button:hover {
     background: #777;
@@ -720,6 +766,53 @@ nav ul li {
         gap: 2rem 0;
         align-items: center;
     }
+}
+
+.video-wrapper {
+    position: relative;
+    width: 300px; /* Fixed width */
+    aspect-ratio: 9 / 16; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 0.25rem; /* Optional: Rounded corners */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+    background-color: #000; /* Optional: Background color while loading */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px; /* Match the wrapper's width */
+    aspect-ratio: 9 / 16; /* 16:9 aspect ratio */
+    border: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .depoimentos-videos {
+        flex-direction: column;
+        gap: 1rem 0;
+        align-items: center;
+    }
+
+    .video-wrapper {
+        width: 90px; /* Maintain fixed size */
+        height: 160px;
+    }
+
+    .depoimentos-videos img {
+        width: 120px; /* Adjusted width for smaller screens */
+        height: auto;
+        border-radius: 0.25rem; /* Optional: Rounded corners */
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+    }
+}
+
+.depoimentos-videos img {
+    width: 120px; /* Adjust as needed */
+    height: auto;
+    border-radius: 0.25rem; /* Optional: Rounded corners */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
 }
 
 .depoimentos-textos-top img {
@@ -1636,6 +1729,10 @@ nav ul li {
 .form-row {
     display: flex;
     gap: 20px;
+}
+
+.form-row label {
+    width: min(15rem, 30vw);
 }
 
 .form-row .form-group {
