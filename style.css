@@ -590,6 +590,26 @@ nav ul li {
     background: #D9D9D9;
 }
 
+.video-wrapper-horizontal {
+    position: relative;
+    width: min(85vw, 45.312rem); /* Standard YouTube embed width */
+    aspect-ratio: 16 / 9; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 0.25rem; /* Rounded corners */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    background-color: #000; /* Background color while loading */
+}
+
+/* Iframe Styling */
+.video-wrapper-horizontal iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the wrapper */
+    height: 100%; /* Full height of the wrapper */
+    border: none;
+}
+
 
 .btn-frame-special {
     width: min(25.1875rem, 65vw);
