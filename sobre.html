@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>GNRE Fácil</title>
+</head>
+
+<body>
+    <!-- main container starts -->
+    <div class="main-container">
+        <!-- navbar start-->
+        <nav>
+            <div class="logo">
+                <img src="./images/LOGO.png" alt="logo" />
+            </div>
+            <div class="desktop-menu">
+                <ul>
+                    <li>
+                        <a href="index.html" class="btn btn-frame btn-frame-standard">
+                            <span class="btn-text btn-text-standard">Início</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html" class="btn btn-frame btn-frame-standard">
+                            <span class="btn-text btn-text-standard">Sobre</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html" class="btn btn-frame btn-frame-standard">
+                            <span class="btn-text btn-text-standard">Contato</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tutoriais.html" class="btn btn-frame btn-frame-standard">
+                            <span class="btn-text btn-text-standard">Tutoriais</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="btn btn-frame btn-frame-blue" id="register-button">
+                            <span class="btn-text btn-text-blue">CADASTRE-SE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-frame btn-frame-white" id="login-button-desktop">
+                            <span class="btn-text btn-text-white">ENTRAR</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu">
+                <img src="./images/svg/mobile-open.svg" alt="Menu" class="menu-icon" id="mobile-open" />
+            </div>
+            <div class="mobile-nav" id="mobile-nav">
+                <img src="./images/svg/mobile-close.svg" alt="Close Menu" class="menu-icon" id="mobile-close"
+                    style="display:none;" />
+                <ul>
+                    <li>
+                        <a href="index.html" class="btn btn-frame btn-frame-standard">
+                            <span class="btn-text btn-text-standard">Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="btn btn-frame btn-frame-standard">
+                            <span class="btn-text btn-text-standard">Sobre</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="btn btn-frame btn-frame-standard">
+                            <span class="btn-text btn-text-standard">Contato</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tutoriais.html" class="btn btn-frame btn-frame-standard">
+                            <span class="btn-text btn-text-standard">Tutoriais</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-frame btn-frame-standard" id="register-button-mobile">
+                            <span class="btn-text btn-text-standard">CADASTRE-SE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-frame btn-frame-standard" id="login-button-mobile">
+                            <span class="btn-text btn-text-standard">ENTRAR</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- navbar ends -->
+        <div class="login-container" id="login-container">
+            <div class="login-header">
+                <h1>Login</h1>
+                <button class="close-button">X</button>
+            </div>
+            <form class="login-form">
+                <input type="text" id="username" name="username" placeholder="Login">
+                <input type="password" id="password" name="password" placeholder="Senha">
+
+                <button type="submit" class="login-register-button">Login</button>
+            </form>
+        </div>
+
+        <div class="register-container" id="register-container">
+            <div class="register-header">
+                <h1>Cadastro</h1>
+                <button class="register-close-button">X</button>
+            </div>
+
+            <form class="register-form">
+                <h3> Perfil </h3>
+                <input type="text" id="username" name="username" placeholder="Login">
+                <input type="text" id="text" name="cargo" placeholder="Cargo">
+                <div class="register-group-container">
+                    <input type="text" id="text" name="email" placeholder="E-mail">
+                    <input type="text" id="text" name="telefone" placeholder="Telefone">
+                </div>
+                <h3> Empresa </h3>
+                <div class="register-group-container">
+                    <input type="text" id="text" name="cnpj" placeholder="CNPJ">
+                    <input type="text" id="text" name="empresa" placeholder="Empresa">
+                </div>
+                <input type="text" id="text" name="cep" placeholder="CEP">
+                <input type="text" id="text" name="endereco" placeholder="Endereço">
+                <input type="text" id="text" name="bairro" placeholder="Bairro">
+                <div class="register-group-container">
+                    <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                    <input type="text" id="estado" name="estado" placeholder="Estado">
+                </div>
+                <input type="text" id="text" name="atividade" placeholder="Atividade">
+                <div class="register-group-container">
+                    <input type="text" id="text" name="produnto_principal" placeholder="Produto Principal">
+                    <input type="text" id="text" name="produnto_secundario" placeholder="Produto Secundário">
+                </div>
+                <button type="submit" class="login-register-button">Cadastrar</button>
+            </form>
+        </div>
+        <!-- navbar ends -->
+
+        <!-- hero section starts -->
+        <div class="about-container">
+            <div class="about-ellipse1"></div>
+            <div class="about-ellipse2"></div>
+            <div class="about-ellipse3"></div>
+            <div class="about-hero-container">
+                <h1 class="about-title">Quem Somos</h1>
+                <p class="about-description">A Sislógica é uma empresa jovem, criada para atender às demandas do setor
+                    de logística e entregas. Com uma equipe altamente qualificada e tecnologia de ponta, somos
+                    especializados no desenvolvimento de sistemas personalizados. Nosso compromisso com o cumprimento de
+                    prazos é uma prioridade, e oferecemos soluções corporativas robustas, com foco na segurança e
+                    proteção de dados.</p>
+                <!-- Placeholder for the video -->
+                <div class="about-hero-rectangle"></div>
+            </div>
+        </div>
+        <!-- hero section ends -->
+
+        <div class="innovation-section">
+            <div class="innovation-top">
+                <h2 class="section-title">Inovamos o mercado com </br> tecnologia</h2>
+                <div class="innovation-horizontal-line"></div>
+            </div>
+            <div class="innovation-cards-container">
+                <div class="innovation-card">
+                    <div class="card-icon">
+                        <img src="./images/svg/sobre-equipe.svg" alt="Equipe" />
+                    </div>
+                    <h3>Equipe</h3>
+                    <p>Nossa equipe possui uma vasta experiência técnica. São mais de 20 anos de know-how em
+                        desenvolvimento. Nosso foco é oferecer ao cliente a melhor solução.</p>
+                </div>
+                <div class="innovation-card">
+                    <div class="card-icon">
+                        <img src="./images/svg/sobre-missao.svg" alt="Missão" />
+                    </div>
+                    <h3>Missão</h3>
+                    <p>Superar as expectativas dos clientes com soluções inteligentes, utilizando tecnologia e pessoas
+                        com total comprometimento.</p>
+                </div>
+                <div class="innovation-card">
+                    <div class="card-icon">
+                        <img src="./images/svg/sobre-valores.svg" alt="Valores" />
+                    </div>
+                    <h3>Valores</h3>
+                    <p>Vivemos e aplicamos diariamente os valores: Simplicidade, Objetividade, Respeito, Humildade e
+                        Determinação.</p>
+                </div>
+                <div class="innovation-card">
+                    <div class="card-icon">
+                        <img src="./images/svg/sobre-infra.svg" alt="Infraestrutura" />
+                    </div>
+                    <h3>Infraestrutura</h3>
+                    <p>Temos uma estrutura robusta com servidores de alta performance e disponibilidade, todos alocados
+                        na AWS cloud, garantindo segurança e privacidade dos dados.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- faq section starts -->
+        <div class="faq-container">
+            <div class="faq-intro">
+                <div class="faq-titulo">
+                    <h1>Perguntas Frequentes </br> GNRE FÁCIL (FAQ)</h1>
+                    <span>
+                        Ficou com alguma outra </br> dúvida? Fale com a nossa </br> equipe pelo Whatsapp!
+
+                    </span>
+                </div>
+                <button class="btn-contact">
+                    TENHO OUTRA DÚVIDA!
+                    <img src="./images/svg/whatsapp.svg" alt="Icon Description">
+                </button>
+
+            </div>
+            <div class="faq-list">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        A implantação da ferramenta é difícil?
+                        <img class="icon" src="./images/svg/arrow.svg" alt="Expand">
+                    </button>
+                    <div class="faq-answer">
+                        <p>De forma alguma! A implantação da nossa ferramenta foi pensada para ser o mais simples e rápida possível. Todo o processo é bastante intuitivo, e você precisará fornecer apenas algumas informações cadastrais básicas para começar. Não há complicações ou a necessidade de conhecimento técnico avançado. Nosso objetivo é garantir que, em poucos minutos, você já possa explorar todas as funcionalidades e começar a usar a ferramenta sem dificuldades.
+
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        O sistema é fácil de usar?
+                        <img class="icon" src="./images/svg/arrow.svg" alt="Expand">
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim, o sistema foi desenvolvido com o usuário em mente, então simplicidade e praticidade são prioridades. Se você tem o XML do CT-e ou a DANFE em mãos, estará pronto para emitir suas GNREs de forma imediata. Não é necessário preencher formulários extensos ou passar por processos complexos. Além disso, se a sua empresa já utiliza algum sistema de mercado, oferecemos a possibilidade de integração, tornando o processo ainda mais eficiente e automatizado. Caso precise de qualquer ajuda, nossa equipe de suporte estará à disposição para guiá-lo.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        O sistema é seguro?
+                        <img class="icon" src="./images/svg/arrow.svg" alt="Expand">
+                    </button>
+                    <div class="faq-answer">
+                        <p>Com certeza. A segurança dos dados é uma de nossas maiores preocupações, e é por isso que armazenamos todas as informações em uma infraestrutura de nuvem confiável e robusta, fornecida por uma das maiores empresas de cloud do mundo. Esse provedor segue rigorosos requisitos de segurança, garantindo a proteção dos seus dados contra acessos não autorizados e eventuais ameaças. Você pode ficar tranquilo, pois seus dados estarão sempre seguros e disponíveis.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        O uso do sistema é caro?
+                        <img class="icon" src="./images/svg/arrow.svg" alt="Expand">
+                    </button>
+                    <div class="faq-answer">
+                        <p>De forma nenhuma! Nós entendemos que cada cliente tem necessidades e demandas diferentes, por isso, oferecemos uma variedade de pacotes que se adaptam a diversos perfis de empresas. Independentemente do tamanho do seu negócio ou do volume de uso, temos um plano que atenderá suas necessidades de maneira econômica. Nosso compromisso é garantir que você tenha acesso a uma solução de qualidade a um preço justo, proporcionando o melhor custo-benefício.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- faq container ends -->
+
+        <!-- footer section ends -->
+        <div class="footer-container">
+            <div class="footer-main-info">
+                <div class="logo">
+                    <img src="./images/LOGO.png" alt="GNRE Fácil Logo" />
+                </div>
+            </div>
+            <div class="footer-contato">
+                <h1>GNRE FÁCIL</h1>
+                <p><a href="index.html">Início</a></p>
+                <p><a href="sobre.html">Sobre</a></p>
+                <p><a href="contato.html">Contato</a></p>
+                <p><a href="tutoriais.html">Tutoriais</a></p>
+            </div>
+    
+            <div class="footer-contato">
+                <h1>Contato</h1>
+                <p>Telefone: <br> +55 11 94581-3860</p>
+                <p> Email: <br> suporte@sislogica.com.br </p>
+            </div>
+            <div class="footer-localizacao">
+                <h1>Localização</h1>
+                <p>Av.Sagitário, 138, Torre: <br> London - 1608, Barueri <br> SP, 06473-073</p>
+            </div>
+            <div class="footer-redes">
+                <h1>Redes Sociais</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path
+                        d="M13.7 2.46707C17.3605 2.46707 17.7939 2.48312 19.2335 2.54734C20.5714 2.60621 21.2939 2.83098 21.7755 3.01828C22.4123 3.26445 22.8726 3.56414 23.3489 4.04043C23.8305 4.52207 24.1248 4.97695 24.371 5.61379C24.5583 6.09543 24.7831 6.82324 24.842 8.15578C24.9062 9.6007 24.9222 10.0342 24.9222 13.6893C24.9222 17.3498 24.9062 17.7832 24.842 19.2228C24.7831 20.5607 24.5583 21.2832 24.371 21.7648C24.1248 22.4016 23.8252 22.8619 23.3489 23.3382C22.8672 23.8198 22.4123 24.1141 21.7755 24.3603C21.2939 24.5476 20.5661 24.7724 19.2335 24.8312C17.7886 24.8955 17.3551 24.9115 13.7 24.9115C10.0395 24.9115 9.60606 24.8955 8.16648 24.8312C6.82859 24.7724 6.10613 24.5476 5.62449 24.3603C4.98766 24.1141 4.52742 23.8145 4.05113 23.3382C3.56949 22.8565 3.27516 22.4016 3.02898 21.7648C2.84168 21.2832 2.61691 20.5554 2.55805 19.2228C2.49383 17.7779 2.47777 17.3444 2.47777 13.6893C2.47777 10.0288 2.49383 9.59535 2.55805 8.15578C2.61691 6.81789 2.84168 6.09543 3.02898 5.61379C3.27516 4.97695 3.57484 4.51672 4.05113 4.04043C4.53277 3.55879 4.98766 3.26445 5.62449 3.01828C6.10613 2.83098 6.83395 2.60621 8.16648 2.54734C9.60606 2.48312 10.0395 2.46707 13.7 2.46707ZM13.7 0C9.98067 0 9.51508 0.0160547 8.0541 0.0802734C6.59848 0.144492 5.59773 0.379961 4.73078 0.717109C3.82637 1.07031 3.06109 1.5359 2.30117 2.30117C1.5359 3.06109 1.07031 3.82637 0.717109 4.72543C0.379961 5.59773 0.144492 6.59312 0.0802734 8.04875C0.0160547 9.51508 0 9.98066 0 13.7C0 17.4193 0.0160547 17.8849 0.0802734 19.3459C0.144492 20.8015 0.379961 21.8023 0.717109 22.6692C1.07031 23.5736 1.5359 24.3389 2.30117 25.0988C3.06109 25.8587 3.82637 26.3297 4.72543 26.6775C5.59773 27.0147 6.59312 27.2502 8.04875 27.3144C9.50973 27.3786 9.97531 27.3946 13.6946 27.3946C17.414 27.3946 17.8796 27.3786 19.3405 27.3144C20.7962 27.2502 21.7969 27.0147 22.6639 26.6775C23.5629 26.3297 24.3282 25.8587 25.0881 25.0988C25.848 24.3389 26.319 23.5736 26.6668 22.6746C27.004 21.8023 27.2395 20.8069 27.3037 19.3512C27.3679 17.8903 27.3839 17.4247 27.3839 13.7054C27.3839 9.98602 27.3679 9.52043 27.3037 8.05945C27.2395 6.60383 27.004 5.60309 26.6668 4.73613C26.3297 3.82637 25.8641 3.06109 25.0988 2.30117C24.3389 1.54125 23.5736 1.07031 22.6746 0.722461C21.8023 0.385312 20.8069 0.149844 19.3512 0.085625C17.8849 0.0160547 17.4193 0 13.7 0Z"
+                        fill="white" />
+                    <path
+                        d="M13.6999 6.6626C9.81467 6.6626 6.6626 9.81467 6.6626 13.6999C6.6626 17.5851 9.81467 20.7372 13.6999 20.7372C17.5851 20.7372 20.7372 17.5851 20.7372 13.6999C20.7372 9.81467 17.5851 6.6626 13.6999 6.6626ZM13.6999 18.2648C11.1793 18.2648 9.13502 16.2205 9.13502 13.6999C9.13502 11.1793 11.1793 9.13502 13.6999 9.13502C16.2205 9.13502 18.2648 11.1793 18.2648 13.6999C18.2648 16.2205 16.2205 18.2648 13.6999 18.2648Z"
+                        fill="white" />
+                    <path
+                        d="M22.6584 6.38439C22.6584 7.29415 21.9199 8.02732 21.0155 8.02732C20.1057 8.02732 19.3726 7.2888 19.3726 6.38439C19.3726 5.47462 20.1111 4.74146 21.0155 4.74146C21.9199 4.74146 22.6584 5.47997 22.6584 6.38439Z"
+                        fill="white" />
+                </svg>
+    
+                <img src="./images/svg/facebook.svg" alt="Facebook">
+    
+                <img src="./images/svg/linkedin.svg" alt="LinkedIn">
+    
+                <img src="./images/svg/youtube.svg" alt="YouTube">
+    
+            </div>
+    
+        </div>
+        <div class="footer-legal">
+            <p>Copyright Sislógica Sistema de Informação Ltda. Todos os direitos reservados</p>
+        </div>
+        <!-- footer container ends -->
+    
+        </div>
+        <!-- main container ends -->
+        <!-- <script src="./script.js"></script> -->
+        <script src="./main.js"></script>
+    </body>
+    
+    </html>
