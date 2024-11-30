@@ -365,21 +365,26 @@ nav ul li {
 
 /* Register Container */
 .register-container {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    
+
     /* Responsive Width */
-    width: 90vw; /* 90% of the viewport width */
-    max-width: 46.3125rem; /* Approximately 740px */
-    
+    width: 90vw;
+    /* 90% of the viewport width */
+    max-width: 46.3125rem;
+    /* Approximately 740px */
+
     /* Responsive Height */
-    max-height: 90vh; /* 90% of the viewport height */
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
-    
+    max-height: 90vh;
+    /* 90% of the viewport height */
+    overflow-y: auto;
+    /* Enable vertical scrolling if content exceeds max-height */
+
     border-radius: 1.25rem;
     border: 1.5px solid #5C10FF;
     background: #2A2A2A;
@@ -387,7 +392,7 @@ nav ul li {
 
     /* Optional: Add padding to prevent content from touching edges */
     padding: 1rem;
-    
+
     /* Smooth Scrolling */
     scroll-behavior: smooth;
 }
@@ -449,13 +454,15 @@ nav ul li {
 .register-form select {
     width: 100%;
     padding: 0.75rem;
-    margin-bottom: 1rem; /* Consistent spacing */
+    margin-bottom: 1rem;
+    /* Consistent spacing */
     border: none;
     border-radius: 4px;
     background: #222;
     color: white;
     font-size: 1rem;
-    appearance: none; /* Remove default arrow */
+    appearance: none;
+    /* Remove default arrow */
     background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><path fill="%23ffffff" d="M0 0l5 5 5-5z"/></svg>');
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
@@ -592,12 +599,17 @@ nav ul li {
 
 .video-wrapper-horizontal {
     position: relative;
-    width: min(85vw, 45.312rem); /* Standard YouTube embed width */
-    aspect-ratio: 16 / 9; /* 16:9 aspect ratio */
+    width: min(40vw, 45.312rem);
+    /* Standard YouTube embed width */
+    aspect-ratio: 16 / 9;
+    /* 16:9 aspect ratio */
     overflow: hidden;
-    border-radius: 0.25rem; /* Rounded corners */
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    background-color: #000; /* Background color while loading */
+    border-radius: 0.25rem;
+    /* Rounded corners */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+    background-color: #000;
+    /* Background color while loading */
 }
 
 /* Iframe Styling */
@@ -605,8 +617,10 @@ nav ul li {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Full width of the wrapper */
-    height: 100%; /* Full height of the wrapper */
+    width: 100%;
+    /* Full width of the wrapper */
+    height: 100%;
+    /* Full height of the wrapper */
     border: none;
 }
 
@@ -643,7 +657,7 @@ nav ul li {
 }
 
 .right-side .title {
-    font-size: min(2.25rem, 5vw);
+    font-size: min(2.25rem, 2vw);
     font-weight: 700;
 }
 
@@ -770,77 +784,29 @@ nav ul li {
     margin-bottom: 2.5rem;
 }
 
-/* Videos Section */
-.depoimentos-videos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: min(18rem, 12vw);
-}
-
-/* Responsive Layout for Smaller Screens */
-@media (max-width: 768px) {
-    .depoimentos-videos {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem 0;
-        align-items: center;
-    }
-}
-
 .video-wrapper {
     position: relative;
-    width: 300px; /* Fixed width */
-    aspect-ratio: 9 / 16; /* 16:9 aspect ratio */
+    width: 20rem;
+    /* Fixed width */
+    aspect-ratio: 9 / 16;
     overflow: hidden;
-    border-radius: 0.25rem; /* Optional: Rounded corners */
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
-    background-color: #000; /* Optional: Background color while loading */
+    border-radius: 0.25rem;
+    /* Optional: Rounded corners */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    /* Optional: Shadow effect */
+    background-color: #000;
+    /* Optional: Background color while loading */
 }
 
 .video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 300px; /* Match the wrapper's width */
-    aspect-ratio: 9 / 16; /* 16:9 aspect ratio */
+    width: 20rem;
+    /* Match the wrapper's width */
+    aspect-ratio: 9 / 16;
+    /* 16:9 aspect ratio */
     border: none;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .depoimentos-videos {
-        flex-direction: column;
-        gap: 1rem 0;
-        align-items: center;
-    }
-
-    .video-wrapper {
-        width: 70vw; /* Maintain fixed size */
-    }
-
-    .depoimentos-videos img {
-        width: 120px; /* Adjusted width for smaller screens */
-        height: auto;
-        border-radius: 0.25rem; /* Optional: Rounded corners */
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
-    }
-}
-
-.depoimentos-videos img {
-    width: 120px; /* Adjust as needed */
-    height: auto;
-    border-radius: 0.25rem; /* Optional: Rounded corners */
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
-}
-
-.depoimentos-textos-top img {
-    width: 22.9375rem;
-    height: 40.75rem;
-    flex-shrink: 0;
-    border-radius: 1.25rem;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    /* Optional shadow */
 }
 
 .depoimentos-textos-top {
@@ -850,22 +816,36 @@ nav ul li {
     gap: 1rem;
 }
 
+.depoimentos-textos-top img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.depoimentos-textos-top h1 {
+    color: #FFF;
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.05625rem;
+}
+
+.depoimentos-textos-top h2 {
+    color: #FFF;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.03rem;
+}
 
 
-/* Text Section */
-.depoimentos-textos {
-    display: flex;
-    flex-direction: row;
-    /* Side-by-side layout for testimonials */
-    justify-content: center;
-    /* Center content horizontally */
-    align-items: flex-start;
-    /* Align text at the top */
-    gap: 8rem;
-    /* Space between each testimonial */
-    max-width: 1200px;
-    /* Limit the container's width */
-    margin: 2rem auto;
+.depoimentos-texto h5 {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
 }
 
 /* Responsive Layout for Smaller Screens */
@@ -878,41 +858,65 @@ nav ul li {
     }
 }
 
-.depoimentos-textos div {
-    max-width: 400px;
-    /* Limit the width of each testimonial */
-    text-align: left;
-    /* Align text to the left */
+.depoimentos-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    /* Space between testimonials */
+    margin: 2rem auto;
+    /* Center the container */
 }
 
-.depoimentos-textos h1 {
-    font-size: 1.875rem;
-    font-weight: 700;
-    line-height: 120%;
-    letter-spacing: -0.05625rem;
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 30rem;
+    padding: 0rem 0rem;
 }
 
-.depoimentos-textos h2 {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 130%;
-    letter-spacing: -0.03rem;
-}
+@media (max-width: 768px) {
+    .depoimentos-content {
+        flex-direction: column;
+        gap: 3rem; /* Increased gap for stacked layout */
+        align-items: center;
+        justify-content: center;
+    }
 
-.depoimentos-textos h5 {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 130%;
-}
+    .depoimento {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.depoimentos-textos img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    /* Circular images */
-    margin-bottom: 1rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    /* Optional shadow */
+    .video-wrapper {
+        width: 85vw; /* 90% of viewport width */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .video-wrapper iframe {
+        width: 85vw; /* 90% of viewport width */
+    }
+
+    .depoimentos-texto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .depoimentos-textos-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .depoimentos-textos-top h1,
+    .depoimentos-textos-top h2,
+    .depoimentos-textos h5 {
+        text-align: center;
+    }
 }
 
 /* Planos Section */
