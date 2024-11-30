@@ -624,6 +624,16 @@ nav ul li {
     border: none;
 }
 
+/* I want to change video-wrapper-horizontal for small screens */
+
+@media screen and (max-width: 768px) {
+    .video-wrapper-horizontal {
+        width: 90vw;
+        /* 90% of viewport width */
+    }
+    
+}
+
 
 .btn-frame-special {
     width: min(25.1875rem, 65vw);
