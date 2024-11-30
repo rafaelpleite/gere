@@ -233,7 +233,7 @@ nav ul li {
     transform: translate(-50%, -50%);
     color: white;
 
-    width: min(46.3125rem, 70vh);
+    width: min(46.3125rem, 70vw);
 
     border-radius: 1.25rem;
     border: 1.5px solid #5C10FF;
